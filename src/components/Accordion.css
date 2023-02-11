@@ -55,6 +55,9 @@
     display:flex;
     justify-content: space-between;
 }
+.items{
+    margin:0 1rem;
+}
 .weekforecast{
     display: flex;
     justify-content: flex-start;
