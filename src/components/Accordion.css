@@ -1,0 +1,76 @@
+.accordin-container{
+    padding:1rem;
+    background-color: rgba(180, 193, 176, 0.);
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+    margin:1rem 0;
+    box-shadow: 0 1px 10px 0 #AAA;
+}
+.accordin-title{
+    font-size: 1.2rem;
+    margin:1rem;
+}
+.item{
+    border-top: .5px solid #AAA;
+    gap:.5rem;
+    width:100%;
+}
+
+.item-title{
+    font-size: 1.2rem;
+    display: grid;
+    flex: 1 1 1;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding:.2rem;
+    background-color:#edead6;
+}
+.item-day{
+    margin-left: 1rem;
+}
+
+.item-title h4{
+    transition: 0.2s ease-in-out;
+    margin: 10px;
+}
+.item-title span{
+    transition: 0.2s ease-in-out;
+    transform-origin: center;
+    margin-bottom: 10px;
+}
+.item-title:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(233, 215, 129);
+}
+.item-title:focus{
+    color:rgb(137, 201, 78)
+}
+.item-title:hover{
+    cursor: pointer;
+}
+.item-content{
+    padding: 1rem 0;
+    background-color: #f8f6f5;
+    display:flex;
+    justify-content: space-between;
+}
+.weekforecast{
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    gap:1rem;
+}
+.icon{
+    align-self: center;
+    justify-self: end;
+    transition: 0.2s ease-in-out;
+}
+.icon-img{
+    max-width: 5rem;
+    align-self: start;
+}
+
+
+/* 如何加入transition的动画丝滑效果？
+在这里动画不生效的原因是因为使用了conditionally render content, 因为无法通过改变content前后的height来实现transition icon同理 虽然他改变了方向但是通过conditionally render来改变的 */

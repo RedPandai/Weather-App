@@ -1,0 +1,238 @@
+.searchBar{
+    width:100%;
+    padding:1rem;
+    display: absolute;
+}
+
+.apptitle{
+    color:rgb(255, 255, 255);
+    font-weight:normal;
+    align-self: center;
+    margin-left: 1rem;;
+}
+
+
+/* Rabbit */
+.rabbit{
+    height:200px; /*the width here can influence the nav bar cannot fill the entire page horizontally*/
+    border-radius: 10px;
+    position:relative;
+    margin:auto;
+    top:6rem;
+}
+
+.rabbitbody{
+    width: 200px;
+    height:200px;
+    position:absolute;
+    bottom:15px;
+    border-radius: 10em;
+    z-index:-1;
+    left:60%;
+}
+
+.rabbitface{
+    width:130px;
+    height:100px;
+    position:absolute;
+    background-color:#fcfef0;
+    border-radius: 50%;
+    top:-60px;
+    left:2em;
+}
+
+.ear-L{
+    width:30px;
+    height:80px;
+    position:absolute;
+    left:80px;
+    top:-60px;
+    background-color: #f7f8f0;
+    border-radius: 10em;
+    z-index: -2;
+    transform: rotate(10deg);
+}
+.ear-L::before{
+    content:"";
+    background-color: #F9C28E;
+    width: 20px;
+    height:60px;
+    position:absolute;
+    top: 10px;
+    left: 5px;
+    border-radius: 40%;
+}
+
+.ear-R{
+    width:30px;
+    height:80px;
+    position:absolute;
+    top:-40px;
+    background-color: #f7f8f0;
+    border-radius: 10em;
+    z-index: -2;
+    transform: rotate(-25deg);
+}
+
+.ear-R::before{
+    content:"";
+    background-color: #F9C28E;
+    width: 20px;
+    height:60px;
+    position:absolute;
+    top: 10px;
+    left: 5px;
+    border-radius: 40%;
+}
+
+.eye{
+    width: 20px;
+    height:15px;
+    border-radius: 50%;
+    position:absolute;
+    top:2em;
+    left:1em;
+    background-color: #3e465f;
+    box-shadow: 60px 0 #3e465f;
+    animation: blink 4s infinite;
+}
+
+.eye::before{
+    content:"";
+    width:8px;
+    height:9px;
+    background-color:#f7f8f0;
+    box-shadow: 60px 0 rgb(255, 255, 255);
+    position:absolute;
+    border-radius: 1em 2em 2em 2em;
+    top:5px;
+}
+
+@keyframes blink{
+0% {
+    transform: scaleY(0.3);
+}
+2%{
+    transform: scaleY(0.3);
+}
+5%{
+    transform:scaleY(1);
+}
+}
+
+.nose{
+    width:20px;
+    height:10px;
+    background-color: #F9C28E;
+    position:absolute;
+    top:3.5em;
+    left:3em;
+    border-radius: 60%;
+}
+
+.mouth{
+    height:16px;
+    width:45px;
+    background-color: #d3adaa;
+    border-radius: 20% 20% 60% 60%;
+    position:absolute;
+    left:2.3em;
+    top:4.5em;
+}
+
+.tooth{
+    background-color: white;
+    height:10px;
+    width:20px;
+    position:absolute;
+    left:0.7em;
+    border-radius: 0 0 5px 3px;
+    z-index:1;
+}
+
+.hands{
+    height:30px;
+    width: 160px;
+    position:absolute;
+    bottom:-20px;
+    z-index: 1;
+}
+
+.hands-L{
+    width:2em;
+    height:1.7em;
+    border-radius: 20px 15px 60% 60%;
+    background-color: #f3f2eb;
+    position:absolute;
+    top:-1em;
+    /*clip-path:polygon(0 0, 0 0, 100% 65%, 0% 100%);*/
+}
+
+.hands-L::before{
+    content:'';
+    width:0.3em;
+    height:0.8em;
+    position:absolute;
+    background-color: #c7b5ae;
+    top:0.86em;
+    left:0.5em;
+    border-radius: 60px 60px 20px 20px;
+    box-shadow:12px 0 #c7b5ae;
+}
+
+.hands-R{
+    width:2em;
+    height:1.8em;
+    border-radius: 15px 20px 60% 60%;
+    background-color: #f3f2eb;
+    position:absolute;
+    left:5em;
+    top:0em;
+}
+
+.hands-R::before{
+    content:'';
+    width:0.3em;
+    height:0.8em;
+    position:absolute;
+    background-color: #c7b5ae;
+    top:0.96em;
+    left:0.5em;
+    border-radius: 60px 60px 20px 20px;
+    box-shadow:13px 0 #c7b5ae;
+}
+
+.intro-card{
+    width:500px;
+    height:160px;
+    background-color: #DB8562;
+    border-radius: 11% 50% 30% 30%;
+    position:absolute;
+    top:5em;
+    left:-20em;
+    z-index:auto;
+}
+
+.leaf{
+    width:6em;
+    height:2.5em;
+    background-color:rgb(147, 212, 122);
+    position:absolute;
+    top:2em;
+    left:-5.5em;
+    transform:rotate(30deg);
+    border-radius: 2.5em 0;
+    z-index:-1;
+}
+/*transform peopoerty will put the element at the front*/
+.leaf::before{
+    content:"";
+    width:6em;
+    height:2.5em;
+    position:absolute;
+    background-color:rgb(142, 194, 108);
+    transform: rotate(-40deg);
+    border-radius: 2.5em 0;
+    top:2em;
+    left:1em;
+}

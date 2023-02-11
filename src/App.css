@@ -1,0 +1,33 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: start;
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  margin:0;
+  background-size:cover;
+  box-sizing: border-box;
+  height:100vh;
+  min-width: 680px;
+  width:100%;
+}
+.App{
+  padding:2rem;
+  display: grid;
+  margin:auto;
+  justify-content: center;
+  gap:1.2rem;
+  align-items: center;
+  width:100%;
+}
+/* .day-style{
+  background-image:url("./Assets/weather/Day.jpg");
+  background-size: cover;
+}
+.night-style{
+  background-image:url("./Assets/weather/Night.jpg");
+  background-size: cover;
+} */
