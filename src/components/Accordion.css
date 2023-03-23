@@ -1,18 +1,18 @@
 .accordin-container{
     padding:1rem;
-    background-color: rgba(180, 193, 176, 0.);
+    background-color: rgba(252, 250, 188, 0.3);
     width:100%;
     height:100%;
     border-radius: 10px;
     margin:1rem 0;
-    box-shadow: 0 1px 10px 0 #AAA;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2)
 }
 .accordin-title{
     font-size: 1.2rem;
     margin:1rem;
 }
 .item{
-    border-top: .5px solid #AAA;
+    border-top: .5px solid #aaaaaa;
     gap:.5rem;
     width:100%;
 }
@@ -24,7 +24,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     padding:.2rem;
-    background-color:#edead6;
+    background-color:#faffc8;
 }
 .item-day{
     margin-left: 1rem;
@@ -41,7 +41,7 @@
 }
 .item-title:hover{
     color: rgb(255, 255, 255);
-    background-color: rgb(233, 215, 129);
+    background-color: rgb(255, 158, 79);
 }
 .item-title:focus{
     color:rgb(137, 201, 78)

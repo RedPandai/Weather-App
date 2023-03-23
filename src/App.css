@@ -23,6 +23,12 @@ body{
   align-items: center;
   width:100%;
 }
+.footer{
+  text-align: center;
+  padding:20px;
+  font-size: 1.5rem;
+  color:rgb(2, 42, 37)
+}
 /* .day-style{
   background-image:url("./Assets/weather/Day.jpg");
   background-size: cover;

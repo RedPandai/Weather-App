@@ -4,7 +4,7 @@
     color: rgb(0, 0, 0);
     margin:1rem 0;
     padding: 1rem;
-    background-color: rgba(180, 193, 176, 0.3);
+    background-color: rgba(252, 250, 188, 0.3);
     border-radius: 10px;
     gap:1rem;
     display:flex;
@@ -13,7 +13,7 @@
     align-items: center;
     flex-direction: column;
     background-size: cover;
-    box-shadow: 0 1px 10px 0 #AAA;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 .weather-container::before{
     content:"";
@@ -75,7 +75,7 @@
 .items{
     width:135px;
     height:90px;
-    background-color: rgb(215, 231, 231);
+    background-color: rgb(234, 255, 253);
     border-radius: 10px;
     display: grid;
     flex-direction: column;
@@ -88,7 +88,7 @@
     font-size:1.1rem;
 }
 .temp span{
-    background-color: aliceblue;
+    background-color: rgb(240, 255, 250);
     padding: .2rem;;
     border-radius: 10px;
     margin-left: 1rem;

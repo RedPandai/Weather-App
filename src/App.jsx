@@ -5,6 +5,7 @@ import Search from "./components/search";
 import "./App.css";
 import { WEATHER_API_KEY, WEATHER_API_URL } from "./api";
 import { useState } from "react";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -36,14 +37,15 @@ function App() {
       if(currentWeather.weather[0].icon.includes('d')) return "day-style"
     }
   } 
-  console.log(currentWeather)
-  console.log(forecast)
+  // console.log(currentWeather)
+  // console.log(forecast)
 
   return (
     <div className= {`App ${formatedBackground()}`}>
       <div className="Search"><Search onSearchChange={handleOnSearchChange} /></div>
       {currentWeather&&<CurrentWeather data={currentWeather}/>}
       {forecast&&<Accordion data={forecast} />}
+      <Footer/>
     </div>
   );
 }
